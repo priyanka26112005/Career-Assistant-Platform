@@ -1,0 +1,15 @@
+{
+  "id":  "94c15d63-6fdc-47e5-922d-5642e4dd90be",
+  "name":  "internproject",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///d%3A/internproject",
+          "defaultBranch":  "main",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

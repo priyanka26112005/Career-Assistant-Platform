@@ -1,0 +1,27 @@
+
+The command exited with code 1.
+Output:
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        22-09-2026  09.39 PM                ai-email-analyzer                                                    
+
+Status      : Stopped
+Name        : MongoDB
+DisplayName : MongoDB Server (MongoDB)
+
+docker : The term 'docker' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:129
++ ... Service -Name "*mongo*" -ErrorAction SilentlyContinue; docker --versi ...
++                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+
+

@@ -1,0 +1,12 @@
+{
+  "id":  "outside-of-project",
+  "name":  "Outside of Project",
+  "permissionGrants":  {
+    "permissionGrants":  {
+      "allow":  [
+        "unsandboxed(npm install)",
+        "unsandboxed(&)"
+      ]
+    }
+  }
+}

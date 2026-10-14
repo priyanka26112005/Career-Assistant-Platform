@@ -1,0 +1,11 @@
+# Tasks
+- [x] Investigate existing models and routes
+- [x] Wire up existing `Message` and `Conversation` models and routes in index.js
+- [x] Build React messaging UI (Real-time MessagingModal)
+- [x] Build React dedicated `/messages` page (MessagesPage.jsx)
+- [x] Implement additional feature: ReportLostItem.jsx
+- [x] Fix Auth Bug (Field mismatch between frontend and backend)
+- [x] Add Email Notifications (Nodemailer setup in Message.js)
+- [x] Connect `ReportFoundItem` and `ReportLostItem` to the Backend Item API
+- [x] Fetch Database Items in `ThingsFoundPage` instead of using local state
+- [x] Ensure Messaging Modal extracts `receiverId` effectively from the Item API

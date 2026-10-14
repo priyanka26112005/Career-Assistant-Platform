@@ -1,0 +1,28 @@
+# Task Checklist - AI-Powered Email Analyzer & Keyword Generator
+
+- [x] **Step 1: Workspace & Base Directory Setup** <!-- id: 0 -->
+  - [x] Create `ai-email-analyzer` directory structure (`backend/` and `frontend/`) <!-- id: 1 -->
+  - [x] Initialize `backend/package.json` with dependencies <!-- id: 2 -->
+  - [x] Initialize `frontend` React + Vite project <!-- id: 3 -->
+- [x] **Step 2: Backend Core Setup** <!-- id: 4 -->
+  - [x] Create `backend/config/db.js` (MongoDB connection) <!-- id: 5 -->
+  - [x] Create `backend/middleware/errorMiddleware.js` <!-- id: 6 -->
+  - [x] Create `backend/models/emailModel.js` (Mongoose Schema) <!-- id: 7 -->
+  - [x] Create `backend/services/llmService.js` (Prompt engineering & LLM integration with fallback mock) <!-- id: 8 -->
+  - [x] Create `backend/controllers/emailController.js` <!-- id: 9 -->
+  - [x] Create `backend/routes/emailRoutes.js` <!-- id: 10 -->
+  - [x] Create `backend/.env` & `backend/.env.example` <!-- id: 11 -->
+  - [x] Create `backend/server.js` <!-- id: 12 -->
+- [x] **Step 3: Frontend Core Setup** <!-- id: 13 -->
+  - [x] Setup `frontend/src/services/emailService.js` <!-- id: 14 -->
+  - [x] Setup `frontend/src/index.css` (Modern CSS design system with badges, cards, responsive layout) <!-- id: 15 -->
+  - [x] Create components (`Navbar.jsx`, `EmailForm.jsx`, `AnalysisResult.jsx`, `KeywordList.jsx`, `Loading.jsx`) <!-- id: 16 -->
+  - [x] Create pages (`AnalyzeEmail.jsx`, `History.jsx`, `EmailDetails.jsx`) <!-- id: 17 -->
+  - [x] Setup `App.jsx` & `main.jsx` routing <!-- id: 18 -->
+- [x] **Step 4: Testing & Verification** <!-- id: 19 -->
+  - [x] Verify backend server builds and responds <!-- id: 20 -->
+  - [x] Verify frontend Vite app builds cleanly <!-- id: 21 -->
+  - [x] Test API endpoints with sample emails <!-- id: 22 -->
+- [x] **Step 5: Documentation & Walkthrough** <!-- id: 23 -->
+  - [x] Create `README.md` with complete installation and usage instructions <!-- id: 24 -->
+  - [x] Create `walkthrough.md` summarizing completed features <!-- id: 25 -->

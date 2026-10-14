@@ -1,0 +1,14 @@
+{
+  "id":  "6649f6f8-7dd4-4c92-b93b-4ca9f664f794",
+  "name":  "LD net model",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///d%3A/LD%20net%20model",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

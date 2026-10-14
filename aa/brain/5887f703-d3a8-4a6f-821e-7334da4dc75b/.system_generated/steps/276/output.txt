@@ -1,0 +1,48 @@
+
+The command exited with code 0.
+Output:
+
+> career-platform-frontend@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/15) ...
+   Generating static pages (3/15) 
+   Generating static pages (7/15) 
+   Generating static pages (11/15) 
+ ✓ Generating static pages (15/15)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    3.28 kB         108 kB
+├ ○ /_not-found                          873 B          88.2 kB
+├ ○ /chat                                177 B           113 kB
+├ ƒ /chat/[sessionId]                    254 B           113 kB
+├ ○ /consultations                       3.16 kB         113 kB
+├ ○ /consultations/book                  7.66 kB         113 kB
+├ ○ /dashboard                           2.22 kB         112 kB
+├ ○ /login                               3.32 kB         134 kB
+├ ○ /payment/cancel                      5.5 kB          111 kB
+├ ○ /payment/success                     1.96 kB         112 kB
+├ ○ /profile                             6.88 kB         112 kB
+├ ○ /register                            3.4 kB          134 kB
+├ ○ /resumes                             2.2 kB          112 kB
+├ ƒ /resumes/[id]/edit                   101 kB          211 kB
+├ ƒ /resumes/[id]/preview                3.83 kB         114 kB
+└ ○ /resumes/create                      6.52 kB         112 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-d1d7e307e77d08c9.js       31.7 kB
+  ├ chunks/fd9d1056-d91e564f26badcf0.js  53.6 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+

@@ -1,0 +1,87 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\(auth)
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                login                                                                
+d-----        13-10-2026  06.33 PM                register                                                             
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                dashboard                                                            
+d-----        13-10-2026  06.33 PM                profile                                                              
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\chat
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                [sessionId]                                                          
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\resumes
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                create                                                               
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\resumes\[id]
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                edit                                                                 
+d-----        13-10-2026  06.33 PM                preview                                                              
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\consultations
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                book                                                                 
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\app\payment
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                success                                                              
+d-----        13-10-2026  06.33 PM                cancel                                                               
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\components
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                ui                                                                   
+d-----        13-10-2026  06.33 PM                layout                                                               
+d-----        13-10-2026  06.33 PM                editor                                                               
+d-----        13-10-2026  06.33 PM                templates                                                            
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        13-10-2026  06.33 PM                lib                                                                  
+d-----        13-10-2026  06.33 PM                types                                                                
+d-----        13-10-2026  06.33 PM                public                                                               
+
+
+

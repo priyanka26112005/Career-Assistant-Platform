@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+
+CommandType     Name                                               Version    Source                                   
+-----------     ----                                               -------    ------                                   
+Application     mongod.exe                                         0.0.0.0    C:\Program Files\MongoDB\Server\8.2\bi...
+
+Status      : Stopped
+Name        : MongoDB
+DisplayName : MongoDB Server (MongoDB)
+
+
+
+

@@ -1,0 +1,14 @@
+Task: 5887f703-d3a8-4a6f-821e-7334da4dc75b/task-303
+Status: DONE
+Log: C:\Users\PRIYANKA\.gemini\antigravity\brain\5887f703-d3a8-4a6f-821e-7334da4dc75b\.system_generated\tasks\task-303.log
+Log output:
+Invoke-RestMethod : Unable to connect to the remote server
+At line:1 char:199
++ ... ds 3; try { Invoke-RestMethod -Uri "http://localhost:5000/health" } f ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 
+
+Last progress: 2s ago

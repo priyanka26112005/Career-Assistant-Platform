@@ -1,0 +1,46 @@
+# Project Walkthrough: Real-time Messaging & Lost Items Report
+
+I have successfully completed the implementation of the message system and the additional "Report Lost Item" feature for your project. Here is a summary of all the exciting additions and connections made to your application.
+
+## 1. Real-Time Messaging System
+The core feature of connecting the finder and loser has been fully realized!
+
+* **Backend Socket.IO Integrated**: The Node.js [index.js](file:///d:/crowdsource_lost_and_found/backend/index.js) server now properly uses `socket.io` to facilitate fast, real-time message swapping. It also serves the previously existing [Message.js](file:///d:/crowdsource_lost_and_found/backend/routes/Message.js) routes.
+* **Modern Messaging Modal**: The [MessagingModal.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/MessagingModal.jsx) component no longer relies on hardcoded data. It dynamically fetches chat history between the current user and the reporter/finder via the API, and listens continuously for new incoming messages using the Socket.io client over the network.
+* **Integration in 'Things Found'**: The [ThingsFoundPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ThingsFoundPage.jsx) has been wired to invoke this modal when you click the "Message Finder" button. Users can now click the button, see past contexts, and instantly chat with the finder.
+
+## 2. Dedicated Messages Dashboard
+To prevent users from losing track of their conversations when the modal closes, a dedicated dashboard was created.
+
+* **`/messages` Route**: Located at [MessagesPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/MessagesPage.jsx) and connected via [App.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/App.jsx), this page lists all active chat conversations the user is participating in. It features an unread message badge feature (driven by the backend's unread logic).
+* **Navigation**: Links have been added to the [Navbar.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/Navbar.jsx) for both desktop and mobile versions so users can effortlessly check their inbox.
+
+## 3. Extra Feature: Reporting Lost Items
+Connecting found items is great, but creating an avenue for people to ask the community to look out for lost items empowers the platform.
+
+* **`/report-lost` Feature created**: I created [ReportLostItem.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportLostItem.jsx). Designed visually to match [ReportFoundItem.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportFoundItem.jsx), it allows users to post what they lost, where they last saw it, and provides them an avenue to optionally attach a reference image and their contact details. 
+* **Navigation Wired**: The navigation was added to the standard Navbar experience alongside the Messages feature.
+
+---
+
+# NEW UPDATES: Auth Fix & Email Notifications
+
+## 4. Authentication Bug Fix
+You encountered an issue where user registration wasn't working.
+* **The fix**: The frontend registration page was sending the variable `phoneNumber` in its API payload, but the backend [User.js](file:///d:/crowdsource_lost_and_found/backend/models/User.js) database exclusively expected the variable to be named `phone`. Because the required variables didn't match, the backend rejected the request. I have correctly re-mapped the variable in [RegistrationPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/RegistrationPage.jsx) so registration and login now work flawlessly!
+
+## 5. Email Notifications 
+You requested that a user receiver should get an email notification when someone messages them about a found item.
+* **Nodemailer Setup**: I installed `nodemailer` and built the mailing logic into [backend/controllers/Message.js](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js). Every time a user sends a message through the platform, the backend looks up the receiver's email address and securely shoots them an email notification containing the sender's name, the message contents, and a prompt to check their dashboard.
+
+> [!IMPORTANT]
+> To actually deliver the emails, you will need to set up SMTP variables in your [backend/.env](file:///d:/crowdsource_lost_and_found/backend/.env) file. Add the following to your backend [.env](file:///d:/crowdsource_lost_and_found/backend/.env) file:
+> ```env
+> EMAIL_USER=your_email@gmail.com
+> EMAIL_PASS=your_gmail_app_password
+> ```
+> *Note: If using Gmail, you must generate an "App Password" in your Google Account Security settings since standard passwords are blocked.* 
+
+
+## What to do next:
+Start both your backend (`npm run dev` in `/backend`) and frontend (`npm run dev` in `/fwd_project`), and try registering a new account. Report a found item on one account, and message the finder on the other account to see the real-time chat and the email dispatch in action!

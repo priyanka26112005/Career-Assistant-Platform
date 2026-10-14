@@ -1,0 +1,14 @@
+mkdir : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:79
++ ... ANKA\.gemini\antigravity\scratch\ai-email-analyzer\backend -p; mkdir  ...
++                                                                ~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,mkdir
+ 
+mkdir : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:162
++ ... rs\PRIYANKA\.gemini\antigravity\scratch\ai-email-analyzer\frontend -p
++                                                                        ~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,mkdir
+ 

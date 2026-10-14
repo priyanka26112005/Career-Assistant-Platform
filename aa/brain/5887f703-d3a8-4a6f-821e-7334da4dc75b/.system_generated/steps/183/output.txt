@@ -1,0 +1,149 @@
+
+The command exited with code 0.
+Output:
+<truncated 1 lines>
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createBooking (src/modules/bookings/booking.controller.ts:72:5)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at src/middleware/validate.ts:20:7
+
+  console.error
+    [2026-10-13T13:05:06.770Z] [ERROR] [POST] /api/bookings - Error: This time slot has already been reserved. Please choose another time. | Error: This time slot has already been reserved. Please choose another time.
+    Stack: Error: This time slot has already been reserved. Please choose another time.
+        at createBooking (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\bookings\booking.controller.ts:43:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createBooking (src/modules/bookings/booking.controller.ts:72:5)
+
+PASS tests/bookings.test.ts
+  Consultation Booking & Concurrency Safeguards API
+    √ should reject bookings scheduled in the past (232 ms)
+    √ should successfully create a pending booking and prevent double booking of overlapping slot (140 ms)
+    √ should support server-side pagination, search, sorting, and filtering (162 ms)
+
+  console.log
+    [2026-10-13T13:05:07.965Z] [INFO] [MockLLMProvider] Simulating career advice response for message: "how should i prepare for a senior engineer intervi..."
+
+      at Logger.info (src/utils/logger.ts:21:13)
+
+  console.error
+    [2026-10-13T13:05:08.030Z] [ERROR] [GET] /api/chat/sessions/6ace2c83cb618e5d926e2f63 - Error: Chat session not found | Error: Chat session not found
+    Stack: Error: Chat session not found
+        at getSession (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\chat\chat.controller.ts:50:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at getSession (src/modules/chat/chat.controller.ts:68:5)
+
+  console.error
+    [2026-10-13T13:05:08.234Z] [ERROR] [GET] /api/chat/sessions/6ace2c84cb618e5d926e2f81 - Error: You are not authorized to view this chat session | Error: You are not authorized to view this chat session
+    Stack: Error: You are not authorized to view this chat session
+        at getSession (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\chat\chat.controller.ts:54:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at getSession (src/modules/chat/chat.controller.ts:68:5)
+
+PASS tests/chat.test.ts
+  AI Career Assistant Chat API
+    √ should create session, exchange messages, and preserve conversation history (395 ms)
+    √ should prevent User B from reading User A chat sessions (199 ms)
+
+Test Suites: 5 passed, 5 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        11.726 s, estimated 64 s
+Ran all test suites.
+

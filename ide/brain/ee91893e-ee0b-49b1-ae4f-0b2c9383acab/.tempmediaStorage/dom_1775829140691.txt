@@ -1,0 +1,54 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (83,44)<a class='group inline-flex items-center gap-2 text-lg font-bold tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300' href='#' />
+	[1] (92,44)<span >HazeAway />
+[2] (83,135)<a class='group flex items-center gap-2 rounded-lg border border-teal-100 bg-teal-50 px-2.5 text-sm font-medium text-gray-900 dark:border-transparent dark:bg-gray-700/75 dark:text-white' href='#' />
+	[3] (24,135)<span  />
+	[4] (83,135)<span >Dashboard />
+	[5] (142,135)<span >3 />
+Projects
+[6] (83,258)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='/dashboard/metrics' />
+	[7] (24,258)<span  />
+	[8] (78,258)<span >Metrics />
+	[9] (137,258)<span >99+ />
+[10] (83,315)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[11] (24,315)<span  />
+	[12] (83,315)<span >Tasks />
+	[13] (142,315)<span >9 />
+[14] (83,372)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[15] (24,372)<span  />
+	[16] (80,372)<span >Clients />
+	[17] (139,372)<span >26 />
+[18] (83,429)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[19] (24,429)<span  />
+	[20] (92,429)<span >Add New />
+Account
+[21] (83,552)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[22] (24,552)<span  />
+	[23] (92,552)<span >Profile />
+[24] (83,609)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[25] (24,609)<span  />
+	[26] (92,609)<span >Settings />
+[27] (83,666)<a class='group flex items-center gap-2 rounded-lg border border-transparent px-2.5 text-sm font-medium text-gray-800 hover:bg-teal-50 hover:text-gray-900 active:border-teal-100 dark:text-gray-200 dark:hover:bg-gray-700/75 dark:hover:text-white dark:active:border-gray-600' href='#' />
+	[28] (24,666)<span  />
+	[29] (92,666)<span >Log out />
+[30] (202,44)<button class='inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-5 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300/25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600/40 dark:active:border-gray-700' />
+[31] (285,44)<input class='block w-full rounded-lg border border-gray-200 py-2 text-sm leading-5 placeholder-gray-400 focus:border-teal-500 focus:ring focus:ring-teal-500/50 dark:border-gray-700 dark:bg-gray-900/25 dark:focus:border-teal-500' id='search' placeholder='Search..' />
+[32] (882,44)<a class='inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-5 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300/25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600/40 dark:active:border-gray-700' href='#' />
+[33] (941,44)<button class='inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-5 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300/25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600/40 dark:active:border-gray-700' id='headlessui-menu-button-:R1r9ucq:' />
+	[34] (932,44)<span >Ashutosh />
+[35] (583,284)<label class='flex flex-col items-center justify-center w-full p-10 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer hover:bg-gray-800 hover:bg-opacity-40 transition duration-300 ease-in-out' />
+	[36] (583,284)<div  />
+		[37] (583,301)<p >or drag and drop />
+			[38] (546,301)<span >Click to upload />
+		[39] (583,336)<p >SVG, PNG, JPG, or GIF />
+[40] (583,492)<button class='w-full p-3 text-white bg-gray-800 rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out'>Upload />
+[41] (208,964)<a class='font-medium text-teal-600 hover:text-teal-400 dark:text-teal-400 dark:hover:text-teal-300' href='https://tailkit.com'>Ashutosh />
+©
+Crafted with
+by
+[42] (959,964)<a class='font-medium text-teal-600 hover:text-teal-400 dark:text-teal-400 dark:hover:text-teal-300' href='https://pixelcave.com'>Ashutosh />
+
+</current_dom>

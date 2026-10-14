@@ -1,0 +1,13 @@
+Task: 5887f703-d3a8-4a6f-821e-7334da4dc75b/task-261
+Status: RUNNING
+Log: C:\Users\PRIYANKA\.gemini\antigravity\brain\5887f703-d3a8-4a6f-821e-7334da4dc75b\.system_generated\tasks\task-261.log
+Log output:
+
+> career-platform-frontend@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+
+Last progress: 26s ago

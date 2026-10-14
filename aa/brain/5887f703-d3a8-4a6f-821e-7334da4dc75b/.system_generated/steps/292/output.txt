@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\data
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        14-10-2026  09.42 AM                db                                                                   
+
+
+

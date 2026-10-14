@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\payments\payment.controller.ts. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -258,7 +258,7 @@
+ 
+     let payment;
+     if (bookingId && bookingId !== 'undefined') {
+-      payment = await Payment.findOne({ bookingId: new Types.ObjectId(bookingId) });
++      payment = await Payment.findOne({ bookingId: new Types.ObjectId(String(bookingId)) });
+     } else if (sessionId) {
+       payment = await Payment.findOne({ stripeSessionId: String(sessionId) });
+     }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

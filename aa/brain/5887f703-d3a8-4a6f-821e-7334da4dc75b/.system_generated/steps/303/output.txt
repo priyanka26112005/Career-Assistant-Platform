@@ -1,0 +1,12 @@
+
+The command exited with code 1.
+Output:
+Invoke-RestMethod : Unable to connect to the remote server
+At line:1 char:199
++ ... ds 3; try { Invoke-RestMethod -Uri "http://localhost:5000/health" } f ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 
+

@@ -1,0 +1,76 @@
+--------------------------------------------------
+🧪 Starting Automated Backend & LLM Service Tests
+--------------------------------------------------
+
+[Test 1] Testing llmService.analyzeEmail...
+[LLM Service] No valid LLM_API_KEY found in .env. Operating in smart rule fallback mode.
+✅ LLM Service Result: {
+  "keywords": [
+    "Interview",
+    "Confirmation",
+    "Priyanka",
+    "technical",
+    "interview"
+  ],
+  "summary": "Interview Confirmation: Dear Priyanka,  Your technical interview has been scheduled for Tuesday at 11 AM.  Please ...",
+  "category": "Job",
+  "priority": "Low",
+  "action_items": [
+    "Please bring your updated resume."
+  ],
+  "date": "Tuesday",
+  "time": "11 AM",
+  "people": [
+    "Priyanka"
+  ],
+  "organizations": []
+}
+
+[Test 2] Testing analyzeEmail Controller Handler...
+[LLM Service] No valid LLM_API_KEY found in .env. Operating in smart rule fallback mode.
+✅ Status: 200
+✅ Response: {
+  "success": true,
+  "data": {
+    "_id": "mem_1790093265282_my8mf",
+    "subject": "Interview Confirmation",
+    "body": "Dear Priyanka,\n\nYour technical interview has been scheduled for Tuesday at 11 AM.\n\nPlease bring your updated resume.\n\nRegards,\nHR Team",
+    "keywords": [
+      "Interview",
+      "Confirmation",
+      "Priyanka",
+      "technical",
+      "interview"
+    ],
+    "summary": "Interview Confirmation: Dear Priyanka,  Your technical interview has been scheduled for Tuesday at 11 AM.  Please ...",
+    "category": "Job",
+    "priority": "Low",
+    "action_items": [
+      "Please bring your updated resume."
+    ],
+    "date": "Tuesday",
+    "time": "11 AM",
+    "people": [
+      "Priyanka"
+    ],
+    "organizations": [],
+    "createdAt": "2026-09-22T16:07:45.282Z",
+    "updatedAt": "2026-09-22T16:07:45.282Z"
+  }
+}
+
+[Test 3] Testing 400 Validation Error on empty body...
+✅ Status: 400 (Expected 400)
+✅ Error Message: Email body is required and cannot be empty
+
+[Test 4] Testing getHistory Controller...
+✅ Status: 200, Count: 1
+
+[Test 5] Testing getAnalysisById Controller...
+✅ Status: 200, Subject: Interview Confirmation
+
+[Test 6] Testing deleteAnalysis Controller...
+✅ Status: 200, Message: Email analysis deleted successfully
+
+🎉 ALL BACKEND TESTS PASSED SUCCESSFULLY!
+

@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+db version v8.2.0
+Build Info: {
+    "version": "8.2.0",
+    "gitVersion": "13e629eeccd63f00d17568fc4c12b7530fa34b54",
+    "modules": [
+        "enterprise"
+    ],
+    "allocator": "tcmalloc-gperf",
+    "environment": {
+        "distmod": "windows"
+    }
+}
+

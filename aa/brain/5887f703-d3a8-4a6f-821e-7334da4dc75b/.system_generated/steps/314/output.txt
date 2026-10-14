@@ -1,0 +1,66 @@
+
+The command exited with code 0.
+Output:
+{
+    "status":  "healthy",
+    "timestamp":  "2026-10-14T04:14:27.076Z",
+    "environment":  "development",
+    "version":  "1.0.0",
+    "service":  "AI Career and Consultation Platform Backend"
+}
+{
+    "success":  true,
+    "data":  {
+                 "consultants":  [
+                                     {
+                                         "_id":  "6acf0196180d31e0d3e8c40b",
+                                         "name":  "David Chen",
+                                         "title":  "VP of Engineering \u0026 Executive Career Coach",
+                                         "bio":  "20+ years building high-velocity engineering organizations. Specializes in senior engineering management and executive leadership transitions.",
+                                         "expertise":  "Engineering Management System Design Leadership Transitions Executive Coaching",
+                                         "email":  "david.chen@consultants.careerplatform.com",
+                                         "hourlyRate":  20000,
+                                         "durationMinutes":  45,
+                                         "isActive":  true,
+                                         "avatarUrl":  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150\u0026auto=format\u0026fit=crop\u0026q=80",
+                                         "availability":  "  ",
+                                         "createdAt":  "2026-10-14T04:14:14.085Z",
+                                         "updatedAt":  "2026-10-14T04:14:14.085Z",
+                                         "__v":  0
+                                     },
+                                     {
+                                         "_id":  "6acf0196180d31e0d3e8c40c",
+                                         "name":  "Maya Patel",
+                                         "title":  "Lead Product Design Career Consultant",
+                                         "bio":  "Design Director helping UX/UI designers and Product Managers craft compelling portfolios and master case study presentations.",
+                                         "expertise":  "UX/UI Design Product Management Portfolio Reviews Case Study Prep",
+                                         "email":  "maya.patel@consultants.careerplatform.com",
+                                         "hourlyRate":  13000,
+                                         "durationMinutes":  45,
+                                         "isActive":  true,
+                                         "avatarUrl":  "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150\u0026auto=format\u0026fit=crop\u0026q=80",
+                                         "availability":  "  ",
+                                         "createdAt":  "2026-10-14T04:14:14.085Z",
+                                         "updatedAt":  "2026-10-14T04:14:14.085Z",
+                                         "__v":  0
+                                     },
+                                     {
+                                         "_id":  "6acf0196180d31e0d3e8c40a",
+                                         "name":  "Sarah Jenkins",
+                                         "title":  "Principal Technical Recruiter \u0026 Career Strategist",
+                                         "bio":  "Former Staff Recruiter at Google and Meta. Over 12 years evaluating software engineering candidates and executive leaders.",
+                                         "expertise":  "Software Engineering Big Tech Interviews Offer Negotiation Resume Strategy",
+                                         "email":  "sarah.jenkins@consultants.careerplatform.com",
+                                         "hourlyRate":  15000,
+                                         "durationMinutes":  45,
+                                         "isActive":  true,
+                                         "avatarUrl":  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150\u0026auto=format\u0026fit=crop\u0026q=80",
+                                         "availability":  "    ",
+                                         "createdAt":  "2026-10-14T04:14:14.085Z",
+                                         "updatedAt":  "2026-10-14T04:14:14.085Z",
+                                         "__v":  0
+                                     }
+                                 ]
+             }
+}
+

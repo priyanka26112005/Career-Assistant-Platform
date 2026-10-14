@@ -1,0 +1,31 @@
+# Database Connection Plan: Items & Messages
+
+You made a great observation! Currently, when you report a found item on the frontend, it saves the item temporarily to your browser's local state, rather than permanently saving it to the backend Database ([Item](file:///d:/crowdsource_lost_and_found/backend/controllers/Item.js#3-34) collection). 
+
+Because the item isn't officially in the database under the reporter's `userId` (email), the system doesn't know *who* found it, making it impossible to route your message to their specific email account!
+
+I have outlined the plan below to permanently connect your Item reporting forms to the backend database so the messaging system works perfectly!
+
+## Proposed Changes
+
+### Frontend Component
+
+#### [MODIFY] [fwd_project/src/components/ReportFoundItem.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportFoundItem.jsx) and [ReportLostItem.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportLostItem.jsx)
+- Instead of returning the item back to [App.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/App.jsx), I will update the [handleSubmit](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportFoundItem.jsx#35-75) function to format the data and send a permanent `POST` request to `http://localhost:5000/api/items/report-found` (and `/report-lost`).
+- This API call will attach your secure authentication token, meaning the Backend database will automatically tag the created item with **your exact User ID and Email Address**.
+
+#### [MODIFY] [fwd_project/src/App.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/App.jsx)
+- Now that the Items exist in the database, we can strip out the temporary `[foundItems, setFoundItems]` React state arrays. 
+
+#### [MODIFY] [fwd_project/src/components/ThingsFoundPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ThingsFoundPage.jsx)
+- When this page loads, it will make a secure `GET` request to `http://localhost:5000/api/items/found` to retrieve all found items directly from the MongoDB database, along with their `userId` (the person who reported it).
+
+### Backend Component
+
+#### [MODIFY] [backend/controllers/Message.js](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js)
+- With the frontend sending real `itemId` references from the database, the messaging controller will look up the item and automatically extract the reporter's email ID, correctly routing the email notification!
+
+## Verification Plan
+1. Report a new item on the frontend (you'll notice it persists even if you refresh the page!).
+2. In a different account, click "Message Finder" and send a message.
+3. Check the backend terminal; the email dispatcher will correctly route the message directly to the registered email address of the user who originally posted the item.

@@ -1,0 +1,32 @@
+
+> career-platform-frontend@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/15) ...
+ ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/payment/success". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at o (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\.next\server\chunks\819.js:1:10537)
+    at c (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\.next\server\chunks\819.js:1:21473)
+    at f (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\.next\server\app\payment\success\page.js:1:2044)
+    at nj (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nL (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nM (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+
+Error occurred prerendering page "/payment/success". Read more: https://nextjs.org/docs/messages/prerender-error
+
+   Generating static pages (3/15) 
+   Generating static pages (7/15) 
+   Generating static pages (11/15) 
+ ✓ Generating static pages (15/15)
+
+> Export encountered errors on following paths:
+	/payment/success/page: /payment/success

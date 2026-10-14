@@ -1,0 +1,7 @@
+# Fog Removal System Frontend
+
+- [ ] Initialize React frontend application
+- [ ] Create video capture component using navigator.mediaDevices.getUserMedia
+- [ ] Implement loop to capture frames from video, convert to base64, and send to backend API (`/process_frame`)
+- [ ] Display the original/processed video stream on the UI
+- [ ] Style the application to match the requested design (title, subtitle, centered video frame)

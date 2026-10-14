@@ -1,0 +1,31 @@
+# Fixing Authentication and Adding Email Notifications
+
+## Problem Identified
+* **Registration Bug**: I found the bug! When you sign up, your frontend interface is sending `phoneNumber` but your backend expects `phone`. Because the backend doesn't receive the required variables properly, it fails to register the user.
+* **Email Notification**: The user requested that whenever someone sends a message regarding an item, an email should be dispatched to the receiver.
+
+## Proposed Changes
+
+### Backend Component
+
+#### [INSTALL] Dependency
+- We will install `nodemailer` in the `backend` to handle sending emails robustly.
+
+#### [MODIFY] [backend/controllers/authController.js](file:///d:/crowdsource_lost_and_found/backend/controllers/authController.js) (or frontend [RegistrationPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/RegistrationPage.jsx))
+- Match the frontend and backend variable names. I will change the frontend's API call to send `phone` instead of `phoneNumber` so it perfectly lines up with what the backend expects.
+
+#### [MODIFY] [backend/controllers/Message.js](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js)
+- Import `nodemailer`.
+- Inside the [sendMessage](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js#5-48) function, after a message is successfully saved to the database, I will programmatically create an email transporter.
+- The system will look up the `receiverId`'s email address and send them an email alert containing the message body and the sender's name.
+- *Note: I will set this up using standard SMTP variables (`EMAIL_USER`, `EMAIL_PASS`) which you can easily configure in your [.env](file:///d:/crowdsource_lost_and_found/backend/.env) file using a Gmail app password or any email provider.*
+
+### Frontend Component
+
+#### [MODIFY] [fwd_project/src/components/RegistrationPage.jsx](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/RegistrationPage.jsx)
+- Update the API call payload from `phoneNumber: formData.phoneNumber` to `phone: formData.phoneNumber` to fix the registration bug! 
+
+## Verification Plan
+1. Register a new test user account; it should successfully save to the database and redirect to the dashboard without any errors.
+2. Log out, and then correctly log in to that account.
+3. Use a secondary account to send a message to this new user. Check the backend console logs to verify that the `nodemailer` service successfully dispatches the email to the registered mail ID.

@@ -1,0 +1,12 @@
+
+Encountered error in step execution: context canceled
+Output:
+[2026-10-14T04:14:13.888Z] [INFO] ✅ MongoDB Connected successfully to database: career_platform
+[2026-10-14T04:14:14.072Z] [INFO] Seeding default demonstration consultants...
+[2026-10-14T04:14:14.264Z] [INFO] Demo consultants seeded successfully
+[2026-10-14T04:14:14.266Z] [INFO] 🚀 Server listening on port 5000 in development mode
+[2026-10-14T04:14:14.266Z] [INFO] 📖 API documentation available at: http://localhost:5000/api/docs
+[2026-10-14T04:14:14.266Z] [INFO] ❤️ Health check available at: http://localhost:5000/health
+GET /health 200 1.925 ms - 161
+GET /api/consultants 200 124.012 ms - 2623
+

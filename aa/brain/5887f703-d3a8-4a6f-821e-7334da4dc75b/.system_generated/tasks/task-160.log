@@ -1,0 +1,707 @@
+
+> career-platform-backend@1.0.0 test
+> jest --runInBand --detectOpenHandles --forceExit
+
+  console.error
+    [2026-10-13T13:00:42.298Z] [ERROR] [POST] /api/resumes - Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required. | Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+    Stack: ValidationError: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+        at model.Object.<anonymous>.Document.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3387:32)
+        at SingleNested.Object.<anonymous>.Subdocument.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\types\subdocument.js:257:12)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3148:17
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\schemaType.js:1443:9
+        at processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createResume (src/modules/resumes/resume.controller.ts:25:5)
+
+  console.error
+    [2026-10-13T13:00:42.577Z] [ERROR] [POST] /api/resumes - Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required. | Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+    Stack: ValidationError: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+        at model.Object.<anonymous>.Document.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3387:32)
+        at SingleNested.Object.<anonymous>.Subdocument.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\types\subdocument.js:257:12)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3148:17
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\schemaType.js:1443:9
+        at processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createResume (src/modules/resumes/resume.controller.ts:25:5)
+
+  console.error
+    [2026-10-13T13:00:42.827Z] [ERROR] [POST] /api/resumes - Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required. | Error: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+    Stack: ValidationError: Resume validation failed: personalInfo.fullName: Path `fullName` is required., personalInfo.email: Path `email` is required.
+        at model.Object.<anonymous>.Document.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3387:32)
+        at SingleNested.Object.<anonymous>.Subdocument.invalidate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\types\subdocument.js:257:12)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\document.js:3148:17
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\mongoose\lib\schemaType.js:1443:9
+        at processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createResume (src/modules/resumes/resume.controller.ts:25:5)
+
+FAIL tests/resumes.test.ts (48.726 s)
+  Resume Management & AI Section Generation API
+    × should create, retrieve, update, and delete a structured resume (910 ms)
+    × should prevent User B from accessing or updating User A resume (247 ms)
+    × should generate resume section via AI integration (248 ms)
+
+  ● Resume Management & AI Section Generation API › should create, retrieve, update, and delete a structured resume
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 500
+
+      33 |       });
+      34 |
+    > 35 |     expect(createRes.status).toBe(201);
+         |                              ^
+      36 |     const resumeId = createRes.body.data.resume._id;
+      37 |
+      38 |     // 2. Update structured sections
+
+      at Object.<anonymous> (tests/resumes.test.ts:35:30)
+
+  ● Resume Management & AI Section Generation API › should prevent User B from accessing or updating User A resume
+
+    TypeError: Cannot read properties of undefined (reading 'resume')
+
+      109 |       .send({ title: 'User A Private Resume' });
+      110 |
+    > 111 |     const resumeId = createRes.body.data.resume._id;
+          |                                          ^
+      112 |
+      113 |     // User B tries to view
+      114 |     const viewRes = await request(app)
+
+      at Object.<anonymous> (tests/resumes.test.ts:111:42)
+
+  ● Resume Management & AI Section Generation API › should generate resume section via AI integration
+
+    TypeError: Cannot read properties of undefined (reading 'resume')
+
+      133 |       .send({ title: 'AI Generated Resume' });
+      134 |
+    > 135 |     const resumeId = createRes.body.data.resume._id;
+          |                                          ^
+      136 |
+      137 |     const genRes = await request(app)
+      138 |       .post(`/api/resumes/${resumeId}/generate`)
+
+      at Object.<anonymous> (tests/resumes.test.ts:135:42)
+
+  console.error
+    [2026-10-13T13:00:46.306Z] [ERROR] [POST] /api/bookings - Error: Cannot book consultation appointments in the past | Error: Cannot book consultation appointments in the past
+    Stack: Error: Cannot book consultation appointments in the past
+        at createBooking (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\bookings\booking.controller.ts:17:13)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:149:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\middleware\validate.ts:20:7
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createBooking (src/modules/bookings/booking.controller.ts:72:5)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at src/middleware/validate.ts:20:7
+
+  console.error
+    [2026-10-13T13:00:46.612Z] [ERROR] [POST] /api/bookings - Error: This time slot has already been reserved. Please choose another time. | Error: This time slot has already been reserved. Please choose another time.
+    Stack: Error: This time slot has already been reserved. Please choose another time.
+        at createBooking (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\bookings\booking.controller.ts:43:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at createBooking (src/modules/bookings/booking.controller.ts:72:5)
+
+PASS tests/bookings.test.ts
+  Consultation Booking & Concurrency Safeguards API
+    √ should reject bookings scheduled in the past (461 ms)
+    √ should successfully create a pending booking and prevent double booking of overlapping slot (285 ms)
+    √ should support server-side pagination, search, sorting, and filtering (303 ms)
+
+  console.log
+    [2026-10-13T13:00:50.556Z] [INFO] [MockStripe (Dev Fallback)] Generated mock checkout session cs_test_mock_6ace2b827f0cd409c85d919e_1791896450556
+
+      at Logger.info (src/utils/logger.ts:21:13)
+
+  console.log
+    [2026-10-13T13:00:50.840Z] [INFO] [MockStripe (Dev Fallback)] Generated mock checkout session cs_test_mock_6ace2b827f0cd409c85d91b3_1791896450840
+
+      at Logger.info (src/utils/logger.ts:21:13)
+
+  console.log
+    [2026-10-13T13:00:50.882Z] [INFO] [PaymentWebhook] Processing event in dev/test mode: undefined
+
+      at Logger.info (src/utils/logger.ts:21:13)
+
+  console.error
+    [2026-10-13T13:00:50.885Z] [ERROR] [POST] /api/payments/webhook - Error: Invalid webhook event payload | Error: Invalid webhook event payload
+    Stack: Error: Invalid webhook event payload
+        at handleWebhook (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\payments\payment.controller.ts:133:13)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:149:13)
+        at rawParser (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\body-parser\lib\types\raw.js:62:7)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:149:13)
+        at Route.dispatch (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:119:3)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at Function.handle (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:175:3)
+        at router (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:47:12)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at urlencodedParser (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\body-parser\lib\types\urlencoded.js:86:7)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\body-parser\lib\read.js:137:5
+        at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+        at invokeCallback (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\raw-body\index.js:238:16)
+        at done (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\raw-body\index.js:227:7)
+        at IncomingMessage.onEnd (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\raw-body\index.js:287:7)
+        at IncomingMessage.emit (node:events:518:28)
+        at endReadableNT (node:internal/streams/readable:1698:12)
+        at processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at handleWebhook (src/modules/payments/payment.controller.ts:250:5)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at rawParser (node_modules/body-parser/lib/types/raw.js:62:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at Route.dispatch (node_modules/express/lib/router/route.js:119:3)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Function.handle (node_modules/express/lib/router/index.js:175:3)
+      at router (node_modules/express/lib/router/index.js:47:12)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at urlencodedParser (node_modules/body-parser/lib/types/urlencoded.js:86:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/body-parser/lib/read.js:137:5
+      at invokeCallback (node_modules/raw-body/index.js:238:16)
+      at done (node_modules/raw-body/index.js:227:7)
+      at IncomingMessage.onEnd (node_modules/raw-body/index.js:287:7)
+
+FAIL tests/payments.test.ts
+  Stripe Payments & Webhook Idempotency API
+    √ should create a checkout session for a pending booking (508 ms)
+    × should process webhook idempotently and transition booking to CONFIRMED (310 ms)
+
+  ● Stripe Payments & Webhook Idempotency API › should process webhook idempotently and transition booking to CONFIRMED
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 400
+
+      92 |       .send(webhookPayload);
+      93 |
+    > 94 |     expect(webhookRes.status).toBe(200);
+         |                               ^
+      95 |     expect(webhookRes.body.received).toBe(true);
+      96 |
+      97 |     // Verify booking updated to CONFIRMED and has meeting link
+
+      at Object.<anonymous> (tests/payments.test.ts:94:31)
+
+  console.log
+    [2026-10-13T13:00:53.295Z] [INFO] [MockLLMProvider] Simulating career advice response for message: "how should i prepare for a senior engineer intervi..."
+
+      at Logger.info (src/utils/logger.ts:21:13)
+
+  console.error
+    [2026-10-13T13:00:53.432Z] [ERROR] [GET] /api/chat/sessions/6ace2b858226037bc8238008 - Error: Chat session not found | Error: Chat session not found
+    Stack: Error: Chat session not found
+        at getSession (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\chat\chat.controller.ts:50:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at getSession (src/modules/chat/chat.controller.ts:68:5)
+
+  console.error
+    [2026-10-13T13:00:53.798Z] [ERROR] [GET] /api/chat/sessions/6ace2b858226037bc8238026 - Error: You are not authorized to view this chat session | Error: You are not authorized to view this chat session
+    Stack: Error: You are not authorized to view this chat session
+        at getSession (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\chat\chat.controller.ts:54:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at getSession (src/modules/chat/chat.controller.ts:68:5)
+
+PASS tests/chat.test.ts
+  AI Career Assistant Chat API
+    √ should create session, exchange messages, and preserve conversation history (815 ms)
+    √ should prevent User B from reading User A chat sessions (357 ms)
+
+  console.error
+    [2026-10-13T13:00:56.813Z] [ERROR] [POST] /api/auth/register - Error: A user with this email address already exists | Error: A user with this email address already exists
+    Stack: Error: A user with this email address already exists
+        at register (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\auth\auth.controller.ts:28:13)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at register (src/modules/auth/auth.controller.ts:57:5)
+
+  console.error
+    [2026-10-13T13:00:57.598Z] [ERROR] [POST] /api/auth/login - Error: Invalid email or password credentials | Error: Invalid email or password credentials
+    Stack: Error: Invalid email or password credentials
+        at login (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\modules\auth\auth.controller.ts:72:13)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at login (src/modules/auth/auth.controller.ts:93:5)
+
+  console.error
+    [2026-10-13T13:00:57.663Z] [ERROR] [GET] /api/users/profile - Error: Authentication token missing or invalid | Error: Authentication token missing or invalid
+    Stack: Error: Authentication token missing or invalid
+        at authenticate (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\middleware\auth.ts:32:11)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:149:13)
+        at Route.dispatch (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\route.js:119:3)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at Function.handle (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:175:3)
+        at router (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:47:12)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at urlencodedParser (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\body-parser\lib\types\urlencoded.js:95:7)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at jsonParser (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\body-parser\lib\types\json.js:117:7)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\src\app.ts:47:36
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at cookieParser (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cookie-parser\index.js:57:14)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at cors (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:188:7)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:224:17
+        at originCallback (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:214:15)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:219:13
+        at optionsCallback (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:199:9)
+        at corsMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\cors\lib\index.js:204:7)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:558:6)
+        at xXssProtectionMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:338:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xPoweredByMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:331:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xPermittedCrossDomainPoliciesMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:324:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xFrameOptionsMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:308:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xDownloadOptionsMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:288:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xDnsPrefetchControlMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:281:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at xContentTypeOptionsMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:273:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at strictTransportSecurityMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:266:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at referrerPolicyMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:234:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at originAgentClusterMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:209:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at crossOriginResourcePolicyMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:202:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at crossOriginOpenerPolicyMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:186:3)
+        at internalNext (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:556:6)
+        at helmetMiddleware (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\helmet\index.cjs:560:6)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at expressInit (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\middleware\init.js:40:5)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at query (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\middleware\query.js:45:5)
+        at Layer.handle [as handle_request] (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\layer.js:95:5)
+        at trim_prefix (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:328:13)
+        at C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:286:9
+        at Function.process_params (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:346:12)
+        at next (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:280:10)
+        at Function.handle (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\router\index.js:175:3)
+        at Function.handle (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\application.js:181:10)
+        at Server.app (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\express.js:39:9)
+        at Server.emit (node:events:518:28)
+        at parserOnIncoming (node:_http_server:1153:12)
+        at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at next (node_modules/express/lib/router/route.js:147:13)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:97:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at Route.dispatch (node_modules/express/lib/router/route.js:119:3)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Function.handle (node_modules/express/lib/router/index.js:175:3)
+      at router (node_modules/express/lib/router/index.js:47:12)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at urlencodedParser (node_modules/body-parser/lib/types/urlencoded.js:95:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at jsonParser (node_modules/body-parser/lib/types/json.js:117:7)
+      at src/app.ts:47:36
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at cookieParser (node_modules/cookie-parser/index.js:57:14)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at cors (node_modules/cors/lib/index.js:188:7)
+      at node_modules/cors/lib/index.js:224:17
+      at originCallback (node_modules/cors/lib/index.js:214:15)
+      at node_modules/cors/lib/index.js:219:13
+      at optionsCallback (node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (node_modules/cors/lib/index.js:204:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at internalNext (node_modules/helmet/index.cjs:558:6)
+      at xXssProtectionMiddleware (node_modules/helmet/index.cjs:338:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xPoweredByMiddleware (node_modules/helmet/index.cjs:331:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xPermittedCrossDomainPoliciesMiddleware (node_modules/helmet/index.cjs:324:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xFrameOptionsMiddleware (node_modules/helmet/index.cjs:308:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xDownloadOptionsMiddleware (node_modules/helmet/index.cjs:288:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xDnsPrefetchControlMiddleware (node_modules/helmet/index.cjs:281:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xContentTypeOptionsMiddleware (node_modules/helmet/index.cjs:273:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at strictTransportSecurityMiddleware (node_modules/helmet/index.cjs:266:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at referrerPolicyMiddleware (node_modules/helmet/index.cjs:234:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at originAgentClusterMiddleware (node_modules/helmet/index.cjs:209:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at crossOriginResourcePolicyMiddleware (node_modules/helmet/index.cjs:202:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at crossOriginOpenerPolicyMiddleware (node_modules/helmet/index.cjs:186:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at helmetMiddleware (node_modules/helmet/index.cjs:560:6)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at expressInit (node_modules/express/lib/middleware/init.js:40:5)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+
+PASS tests/auth.test.ts
+  Authentication & User Profile API
+    √ should register a new user successfully (495 ms)
+    √ should reject registration with duplicate email (275 ms)
+    √ should login an existing user with correct credentials (390 ms)
+    √ should reject login with incorrect password (398 ms)
+    √ should reject unauthenticated request to /api/users/profile (93 ms)
+    √ should get and update user profile when authenticated (339 ms)
+
+Test Suites: 2 failed, 3 passed, 5 total
+Tests:       4 failed, 12 passed, 16 total
+Snapshots:   0 total
+Time:        67.752 s
+Ran all test suites.

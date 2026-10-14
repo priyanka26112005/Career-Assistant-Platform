@@ -1,0 +1,125 @@
+
+The command exited with code 0.
+Output:
+<truncated 73 lines>
+warning: in the working copy of 'frontend/app/resumes/create/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/app/resumes/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/editor/TiptapResumeEditor.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/layout/DashboardLayout.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/layout/Navbar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/layout/Sidebar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/templates/ResumePreview.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Badge.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Button.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Card.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Input.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Modal.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/components/ui/Skeleton.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/lib/api.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/lib/utils.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/next.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/postcss.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/tailwind.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/types/index.ts', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) bb5a45a] feat: complete production-ready AI-powered career and consultation platform
+ 96 files changed, 18953 insertions(+)
+ create mode 100644 .env.example
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 backend/jest.config.js
+ create mode 100644 backend/package-lock.json
+ create mode 100644 backend/package.json
+ create mode 100644 backend/src/app.ts
+ create mode 100644 backend/src/config/database.ts
+ create mode 100644 backend/src/config/env.ts
+ create mode 100644 backend/src/integrations/calendar.ts
+ create mode 100644 backend/src/integrations/email.ts
+ create mode 100644 backend/src/integrations/llm.ts
+ create mode 100644 backend/src/middleware/auth.ts
+ create mode 100644 backend/src/middleware/errorHandler.ts
+ create mode 100644 backend/src/middleware/validate.ts
+ create mode 100644 backend/src/modules/auth/auth.controller.ts
+ create mode 100644 backend/src/modules/auth/auth.routes.ts
+ create mode 100644 backend/src/modules/auth/auth.validation.ts
+ create mode 100644 backend/src/modules/bookings/booking.controller.ts
+ create mode 100644 backend/src/modules/bookings/booking.model.ts
+ create mode 100644 backend/src/modules/bookings/booking.routes.ts
+ create mode 100644 backend/src/modules/bookings/booking.validation.ts
+ create mode 100644 backend/src/modules/chat/chat.controller.ts
+ create mode 100644 backend/src/modules/chat/chat.model.ts
+ create mode 100644 backend/src/modules/chat/chat.routes.ts
+ create mode 100644 backend/src/modules/chat/chat.validation.ts
+ create mode 100644 backend/src/modules/consultants/consultant.controller.ts
+ create mode 100644 backend/src/modules/consultants/consultant.model.ts
+ create mode 100644 backend/src/modules/consultants/consultant.routes.ts
+ create mode 100644 backend/src/modules/dashboard/dashboard.controller.ts
+ create mode 100644 backend/src/modules/dashboard/dashboard.routes.ts
+ create mode 100644 backend/src/modules/payments/payment.controller.ts
+ create mode 100644 backend/src/modules/payments/payment.model.ts
+ create mode 100644 backend/src/modules/payments/payment.routes.ts
+ create mode 100644 backend/src/modules/resumes/resume.controller.ts
+ create mode 100644 backend/src/modules/resumes/resume.model.ts
+ create mode 100644 backend/src/modules/resumes/resume.routes.ts
+ create mode 100644 backend/src/modules/resumes/resume.templates.ts
+ create mode 100644 backend/src/modules/resumes/resume.validation.ts
+ create mode 100644 backend/src/modules/users/user.controller.ts
+ create mode 100644 backend/src/modules/users/user.model.ts
+ create mode 100644 backend/src/modules/users/user.routes.ts
+ create mode 100644 backend/src/modules/users/user.validation.ts
+ create mode 100644 backend/src/server.ts
+ create mode 100644 backend/src/utils/errors.ts
+ create mode 100644 backend/src/utils/logger.ts
+ create mode 100644 backend/tests/auth.test.ts
+ create mode 100644 backend/tests/bookings.test.ts
+ create mode 100644 backend/tests/chat.test.ts
+ create mode 100644 backend/tests/payments.test.ts
+ create mode 100644 backend/tests/resumes.test.ts
+ create mode 100644 backend/tests/setup.ts
+ create mode 100644 backend/tsconfig.json
+ create mode 100644 docker-compose.yml
+ create mode 100644 docs/api-documentation.md
+ create mode 100644 docs/architecture.md
+ create mode 100644 docs/database-design.md
+ create mode 100644 docs/testing.md
+ create mode 100644 frontend/app/(auth)/login/page.tsx
+ create mode 100644 frontend/app/(auth)/register/page.tsx
+ create mode 100644 frontend/app/chat/[sessionId]/page.tsx
+ create mode 100644 frontend/app/chat/page.tsx
+ create mode 100644 frontend/app/consultations/book/page.tsx
+ create mode 100644 frontend/app/consultations/page.tsx
+ create mode 100644 frontend/app/dashboard/page.tsx
+ create mode 100644 frontend/app/globals.css
+ create mode 100644 frontend/app/layout.tsx
+ create mode 100644 frontend/app/page.tsx
+ create mode 100644 frontend/app/payment/cancel/page.tsx
+ create mode 100644 frontend/app/payment/success/page.tsx
+ create mode 100644 frontend/app/profile/page.tsx
+ create mode 100644 frontend/app/resumes/[id]/edit/page.tsx
+ create mode 100644 frontend/app/resumes/[id]/preview/page.tsx
+ create mode 100644 frontend/app/resumes/create/page.tsx
+ create mode 100644 frontend/app/resumes/page.tsx
+ create mode 100644 frontend/components/editor/TiptapResumeEditor.tsx
+ create mode 100644 frontend/components/layout/DashboardLayout.tsx
+ create mode 100644 frontend/components/layout/Navbar.tsx
+ create mode 100644 frontend/components/layout/Sidebar.tsx
+ create mode 100644 frontend/components/templates/ResumePreview.tsx
+ create mode 100644 frontend/components/ui/Badge.tsx
+ create mode 100644 frontend/components/ui/Button.tsx
+ create mode 100644 frontend/components/ui/Card.tsx
+ create mode 100644 frontend/components/ui/Input.tsx
+ create mode 100644 frontend/components/ui/Modal.tsx
+ create mode 100644 frontend/components/ui/Skeleton.tsx
+ create mode 100644 frontend/lib/api.ts
+ create mode 100644 frontend/lib/utils.ts
+ create mode 100644 frontend/next-env.d.ts
+ create mode 100644 frontend/next.config.js
+ create mode 100644 frontend/package-lock.json
+ create mode 100644 frontend/package.json
+ create mode 100644 frontend/postcss.config.js
+ create mode 100644 frontend/tailwind.config.js
+ create mode 100644 frontend/tsconfig.json
+ create mode 100644 frontend/types/index.ts
+

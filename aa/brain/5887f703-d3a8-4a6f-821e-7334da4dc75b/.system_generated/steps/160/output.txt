@@ -1,0 +1,131 @@
+
+The command exited with code 1.
+Output:
+<truncated 581 lines>
+        at Function.handle (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\application.js:181:10)
+        at Server.app (C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\backend\node_modules\express\lib\express.js:39:9)
+        at Server.emit (node:events:518:28)
+        at parserOnIncoming (node:_http_server:1153:12)
+        at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+
+      27 |
+      28 |   error(message: string, err?: unknown, context?: Record<string, unknown>): void {
+    > 29 |     console.error(this.format('error', message, context, err));
+         |             ^
+      30 |   }
+      31 |
+      32 |   debug(message: string, context?: Record<string, unknown>): void {
+
+      at Logger.error (src/utils/logger.ts:29:13)
+      at errorHandler (src/middleware/errorHandler.ts:14:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (node_modules/express/lib/router/index.js:326:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at node_modules/express/lib/router/index.js:646:15
+      at next (node_modules/express/lib/router/index.js:265:14)
+      at next (node_modules/express/lib/router/route.js:141:14)
+      at Layer.handle_error (node_modules/express/lib/router/layer.js:67:12)
+      at next (node_modules/express/lib/router/route.js:147:13)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:97:5)
+      at next (node_modules/express/lib/router/route.js:149:13)
+      at Route.dispatch (node_modules/express/lib/router/route.js:119:3)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at Function.handle (node_modules/express/lib/router/index.js:175:3)
+      at router (node_modules/express/lib/router/index.js:47:12)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at urlencodedParser (node_modules/body-parser/lib/types/urlencoded.js:95:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at jsonParser (node_modules/body-parser/lib/types/json.js:117:7)
+      at src/app.ts:47:36
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at cookieParser (node_modules/cookie-parser/index.js:57:14)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at cors (node_modules/cors/lib/index.js:188:7)
+      at node_modules/cors/lib/index.js:224:17
+      at originCallback (node_modules/cors/lib/index.js:214:15)
+      at node_modules/cors/lib/index.js:219:13
+      at optionsCallback (node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (node_modules/cors/lib/index.js:204:7)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at internalNext (node_modules/helmet/index.cjs:558:6)
+      at xXssProtectionMiddleware (node_modules/helmet/index.cjs:338:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xPoweredByMiddleware (node_modules/helmet/index.cjs:331:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xPermittedCrossDomainPoliciesMiddleware (node_modules/helmet/index.cjs:324:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xFrameOptionsMiddleware (node_modules/helmet/index.cjs:308:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xDownloadOptionsMiddleware (node_modules/helmet/index.cjs:288:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xDnsPrefetchControlMiddleware (node_modules/helmet/index.cjs:281:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at xContentTypeOptionsMiddleware (node_modules/helmet/index.cjs:273:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at strictTransportSecurityMiddleware (node_modules/helmet/index.cjs:266:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at referrerPolicyMiddleware (node_modules/helmet/index.cjs:234:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at originAgentClusterMiddleware (node_modules/helmet/index.cjs:209:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at crossOriginResourcePolicyMiddleware (node_modules/helmet/index.cjs:202:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at crossOriginOpenerPolicyMiddleware (node_modules/helmet/index.cjs:186:3)
+      at internalNext (node_modules/helmet/index.cjs:556:6)
+      at helmetMiddleware (node_modules/helmet/index.cjs:560:6)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+      at next (node_modules/express/lib/router/index.js:280:10)
+      at expressInit (node_modules/express/lib/middleware/init.js:40:5)
+      at Layer.handle [as handle_request] (node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (node_modules/express/lib/router/index.js:328:13)
+      at node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (node_modules/express/lib/router/index.js:346:12)
+
+PASS tests/auth.test.ts
+  Authentication & User Profile API
+    √ should register a new user successfully (495 ms)
+    √ should reject registration with duplicate email (275 ms)
+    √ should login an existing user with correct credentials (390 ms)
+    √ should reject login with incorrect password (398 ms)
+    √ should reject unauthenticated request to /api/users/profile (93 ms)
+    √ should get and update user profile when authenticated (339 ms)
+
+Test Suites: 2 failed, 3 passed, 5 total
+Tests:       4 failed, 12 passed, 16 total
+Snapshots:   0 total
+Time:        67.752 s
+Ran all test suites.
+

@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+Start-Process : A positional parameter cannot be found that accepts argument 
+'C:\Users\PRIYANKA\.gemini\antigravity\scratch\career-platform\data\db\ --bind_ip 127.0.0.1 --port 27017'.
+At line:1 char:1
++ Start-Process -FilePath "C:\Program Files\MongoDB\Server\8.2\bin\mong ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.StartProcessCommand
+ 
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                  
+-------  ------    -----      -----     ------     --  -- -----------                                                  
+    341      28   174644      52764              5668   0 mongod                                                       
+
+
+

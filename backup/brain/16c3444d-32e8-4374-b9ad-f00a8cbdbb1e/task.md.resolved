@@ -1,0 +1,11 @@
+# Tasks
+- [x] Investigate existing models and routes
+- [x] Wire up existing [Message](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js#100-137) and [Conversation](file:///d:/crowdsource_lost_and_found/backend/controllers/Message.js#138-180) models and routes in index.js
+- [x] Build React messaging UI (Real-time MessagingModal)
+- [x] Build React dedicated `/messages` page (MessagesPage.jsx)
+- [x] Implement additional feature: ReportLostItem.jsx
+- [x] Fix Auth Bug (Field mismatch between frontend and backend)
+- [x] Add Email Notifications (Nodemailer setup in Message.js)
+- [x] Connect [ReportFoundItem](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportFoundItem.jsx#5-211) and [ReportLostItem](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ReportLostItem.jsx#5-206) to the Backend Item API
+- [x] Fetch Database Items in [ThingsFoundPage](file:///d:/crowdsource_lost_and_found/fwd_project/src/components/ThingsFoundPage.jsx#6-176) instead of using local state
+- [x] Ensure Messaging Modal extracts `receiverId` effectively from the Item API

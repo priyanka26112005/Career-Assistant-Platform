@@ -1,0 +1,7 @@
+# Tasks
+- [ ] Investigate existing models and routes
+- [ ] Set up Socket.io for real-time messaging in backend (or simple REST API for messages)
+- [ ] Create `Message` and `Conversation` models
+- [ ] Create message routes and controllers
+- [ ] Build React messaging UI (Chat window, conversations list)
+- [ ] Suggest and implement additional features (Item search/filter, notifications, etc.)

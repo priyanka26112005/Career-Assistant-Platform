@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+
+v22.14.0
+10.9.2
+git version 2.48.1.windows.1
+Path                                         
+----                                         
+C:\Users\PRIYANKA\.gemini\antigravity\scratch
+
+
+

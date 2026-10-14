@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+?? .env.example
+?? .gitignore
+?? README.md
+?? backend/
+?? docker-compose.yml
+?? docs/
+?? frontend/
+

@@ -1,0 +1,10 @@
+Test-Path : Access is denied
+At line:1 char:49
++ ... ilentlyContinue; Test-Path "C:\Program Files\nodejs\node.exe"; Test-P ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Program Files\nodejs\node.exe:String) [Test-Path], UnauthorizedAcc 
+   essException
+    + FullyQualifiedErrorId : ItemExistsUnauthorizedAccessError,Microsoft.PowerShell.Commands.TestPathCommand
+ 
+False
+False
